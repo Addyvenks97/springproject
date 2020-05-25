@@ -2,16 +2,26 @@ package com.addy.springproject.model;
 
 public class UserModel {
 
-    private String name;
-    private String email;
+    private String userName;
+    private String userMail;
+
     public UserModel() {
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserMail() {
+        return userMail;
+    }
+
+    public void setUserMail(String userMail) {
+        this.userMail = userMail;
     }
 }
+
