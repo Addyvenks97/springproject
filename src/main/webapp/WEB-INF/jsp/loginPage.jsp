@@ -1,22 +1,42 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
-</html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>login page</title>
+    <title>  Login Page</title>
 </head>
+
 <body>
 
+<form:form action="loginPage" method="POST" modelAttribute="userDetails">
 
-<h1>Hi</h1>
+     name: <form:input path="userName" />
 
-<form method = "POST">
-        name :<input type="text" name = "userName"/>
-        email :<input type="text" name = "userMail"/>
-        <input type = "submit"/>
+    <br><br>
+
+     dob: <form:input path="userDob" />
+
+    <br><br>
+
+    <input type="submit" />
+
+</form:form>
 
 
-</form>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

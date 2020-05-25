@@ -1,3 +1,6 @@
+<!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="a"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%> -->
+
 
 <!DOCTYPE html>
 </html>
@@ -9,8 +12,9 @@
 <body>
 
 
-Name is ${name} <br>
-Email id is ${email}
+Name is ${userDetails.userName}
+<br>
+dob is ${userDetails.userDob}
 
 </body>
 </html>

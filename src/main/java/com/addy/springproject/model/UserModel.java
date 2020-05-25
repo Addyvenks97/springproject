@@ -3,9 +3,19 @@ package com.addy.springproject.model;
 public class UserModel {
 
     private String userName;
-    private String userMail;
+    private String userDob;
+
 
     public UserModel() {
+
+    }
+
+    public String getUserDob() {
+        return userDob;
+    }
+
+    public void setUserDob(String userDob) {
+        this.userDob = userDob;
     }
 
     public String getUserName() {
@@ -16,12 +26,8 @@ public class UserModel {
         this.userName = userName;
     }
 
-    public String getUserMail() {
-        return userMail;
-    }
 
-    public void setUserMail(String userMail) {
-        this.userMail = userMail;
-    }
+
+
 }
 
